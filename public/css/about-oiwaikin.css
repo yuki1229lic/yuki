@@ -1,0 +1,765 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #212121;
+    font-family: Meiryo, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "sans-serif";
+}
+
+.pageWidth {
+    width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px
+}
+.num {
+    font-family: 'Open Sans', sans-serif;
+}
+.red {
+    color: #f22112;
+}
+@media only screen and (max-width:720px) {
+    .pageWidth {
+        width: 100%;
+    }
+}
+@media only screen and (max-width:480px) {
+    .pageWidth {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+/* header START */
+#siteHeader {
+    display: block;
+    background-color: #ffffff;
+    border-bottom: 1px solid #d1d1d1;
+}
+#siteHeader .pageWidth {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+}
+#siteHeader .logo {
+    width: 198px;
+}
+#siteHeader .logo img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width:720px) {
+    #siteHeader .logo {
+        width: 60%;
+        max-width: 198px;
+    }
+}
+/* header END */
+
+/* mainVisual START */
+#mainVisual .pageWidth {
+    height: 600px;
+    padding-top: 40px;
+    padding-right: 400px;
+    text-align: center;
+    background-image: url("../images/about-oiwaikin/img01.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#mainVisual .catch01 {
+    margin-bottom: 30px;
+    padding: 5px 0;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #0e6eb8;
+    border-radius: 200px;
+}
+#mainVisual .catch02 {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 0 0.5em;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+    border-bottom: 3px solid #f22112;
+}
+#mainVisual .catch03 {
+    margin-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.0;
+}
+#mainVisual .catch03 .strong {
+    font-size: 3.25em;
+}
+#mainVisual .catch04 {
+    margin-bottom: 10px;
+    font-size: 100px;
+    line-height: 1.0;
+}
+#mainVisual .catch05 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#mainVisual .catch06 {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+#mainVisual .catch06::before,
+#mainVisual .catch06::after {
+    content: "";
+    display: inline-block;
+    width: 33px;
+    height: 59px;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#mainVisual .catch06::before {
+    background-image: url("../images/about-oiwaikin/01.png");
+}
+#mainVisual .catch06::after {
+    background-image: url("../images/about-oiwaikin/02.png");
+}
+#mainVisual .catch06 .strong {
+    padding: 0 10px;
+    font-size: 1.375em;
+}
+#mainVisual .catch06 .strong.red {
+    font-size: 1.75em;
+}
+@media only screen and (max-width:720px) {
+    #mainVisual .pageWidth {
+        height: auto;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 55vw;
+        background-image: url("../images/about-oiwaikin/img01sp.png");
+        background-position: center bottom;
+    }
+    #mainVisual .catch01 {
+        margin-bottom: 20px;
+    }
+    #mainVisual .catch01 span {
+        display: block;
+    }
+    #mainVisual .catch02 {
+        font-size: 6vw;
+    }
+    #mainVisual .catch03 {
+        font-size: 6vw;
+    }
+    #mainVisual .catch03 .strong {
+        font-size: 2.8em;
+        letter-spacing: -0.03em;
+    }
+    #mainVisual .catch04 {
+        margin-bottom: 10px;
+        font-size: 16vw;
+    }
+    #mainVisual .catch05 {
+        margin-bottom: 10px;
+        font-size: 6vw;
+    }
+    #mainVisual .catch06 {
+        font-size: 6vw;
+    }
+    #mainVisual .catch06::before,
+    #mainVisual .catch06::after {
+        width: 6vw;
+        height: 10vw;
+    }
+    #mainVisual .catch06 .strong {
+        padding: 0 5px;
+        font-size: 1.2em;
+    }
+    #mainVisual .catch06 .strong.red {
+        font-size: 1.5em;
+    }
+}
+@media only screen and (max-width:480px) {
+    #mainVisual .pageWidth {
+        padding-right: 3%;
+    }
+    #mainVisual .catch01 {
+        font-size: 16px;
+    }
+    #mainVisual .catch02 {
+        font-size: 7vw;
+    }
+    #mainVisual .catch03 {
+        font-size: 7vw;
+    }
+    #mainVisual .catch03 .strong {
+        font-size: 2.5em;
+    }
+    #mainVisual .catch05 {
+        font-size: 7vw;
+    }
+    #mainVisual .catch06 {
+        font-size: 7vw;
+    }
+}
+@media only screen and (max-width:360px) {
+    #mainVisual .catch01 {
+        letter-spacing: -0.1em;
+    }
+}
+/* mainVisual END */
+
+/* content01 START */
+#content01 {
+    padding: 50px 0;
+    background-color: #0e6eb8;
+}
+#content01 .title01 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+#content01 .title01b {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+}
+#content01 .rewardList {
+    display: table;
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#content01 .rewardList li {
+    display: table-cell;
+    width: -webkit-calc(100% / 3);
+    width: calc(100% / 3);
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border:3px solid #212121;
+}
+#content01 .rewardList h3 {
+    position: relative;
+    height: 80px;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 1.4;
+    overflow: hidden;
+}
+#content01 .rewardList h3 .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+#content01 .rewardList h3 .red {
+    font-size: 1.4em;
+}
+#content01 .rewardList .img {
+    position: relative;
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+}
+#content01 .rewardList .img  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+#content01 .rewardList .text {
+    text-align: left;
+}
+@media only screen and (max-width:720px) {
+    #content01 {
+        padding: 30px 0;
+    }
+    #content01 .title01 {
+        font-size: 8vw;
+    }
+    #content01 .title01b {
+        font-size: 5vw;
+    }
+    #content01 .rewardList {
+        display: block;
+    }
+    #content01 .rewardList li {
+        display: block;
+        width: 100%;
+        max-width: 480px;
+        margin: 10px auto;
+    }
+    #content01 .rewardList h3 {
+        position: static;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    #content01 .rewardList h3 .item {
+        position: static;
+        top: auto;
+        left: auto;
+        transform: translate(0, 0);
+    }
+    #content01 .rewardList .img {
+        position: static;
+        height: auto;
+        overflow: auto;
+        padding-bottom: 10px;
+    }
+    #content01 .rewardList .img img {
+        position: static;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
+        transform: translate(0, 0);
+    }
+}
+@media only screen and (max-width:480px) {
+    #content01 .rewardList h3 {
+        font-size: 6vw;
+    }
+}
+/* content01 END */
+
+/* content02 START */
+#content02 {
+    padding: 50px 0;
+}
+#content02 .title02 {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#content02 .flowList {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#content02 .flowList li {
+    position: relative;
+    width: -webkit-calc((100% - 160px) / 3);
+    width: calc((100% - 160px) / 3);
+    padding: 20px;
+    text-align: center;
+    background-color: #ffffff;
+    border:1px solid #d1d1d1;
+}
+#content02 .flowList li.lisi02::before,
+#content02 .flowList li.lisi02::after {
+    content: "";
+    position: absolute;
+    top: calc(50% - 35px);
+    display: block;
+    width: 80px;
+    height: 70px;
+    background-image: url("../images/about-oiwaikin/03.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#content02 .flowList li.lisi02::before {
+    left: -80px;
+}
+#content02 .flowList li.lisi02::after {
+    right: -80px;
+}
+#content02 .flowList .step {
+    width: 120px;
+    margin: 0 auto 10px auto;
+    color: #0e6eb8;
+    line-height: 30px;
+    background-color: #d6edff;
+    border-radius: 50px;
+}
+#content02 .flowList h3 {
+    position: relative;
+    color: #0e6eb8;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 40px;
+    background-color: #ffffff;
+    border: 1px solid #0e6eb8;
+}
+#content02 .flowList h3::after {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    bottom: -8px;
+    left: calc(50% - 10px);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0) 46%, #ffffff 47%);
+    border-right: 1px solid #0e6eb8;
+    border-bottom: 1px solid #0e6eb8;
+    transform: rotate(45deg);
+}
+#content02 .flowList .img {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+#content02 .flowList .img  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    transform: translate(-50%, -50%);
+}
+#content02 .flowList .text {
+    text-align: left;
+}
+#content02 .dn {
+    margin: 20px 0;
+    text-align: center;
+}
+#content02 .dn .img {
+    margin-bottom: 20px;
+}
+#content02 .dn .img img {
+    display: block;
+    margin: 0 auto;
+}
+#content02 .dn .text {
+    display: block;
+    margin: 10px auto;
+    font-size: 20px;
+    font-weight: bold;
+}
+#content02 .buttonBox {
+    margin: 0;
+}
+#content02 .buttonBox a {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    line-height: 60px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #f22112;
+    border:1px solid #f22112;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+#content02 .buttonBox a:hover {
+    color: #f22112;
+    background-color: #ffffff;
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width:720px) {
+    #content02 {
+        padding: 40px 0;
+    }
+    #content02 .title02 {
+        font-size: 8vw;
+    }
+    #content02 .flowList {
+        flex-direction: column;
+        justify-content:space-around;
+        gap: 60px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    #content02 .flowList li {
+        position: relative;
+        width: 100%;
+        max-width: 480px;
+        margin: 0 auto
+    }
+    #content02 .flowList li.lisi02::before,
+    #content02 .flowList li.lisi02::after {
+        top: auto;
+        left: 0;
+        width: 100%;
+        height: 38px;
+        background-image: url("../images/about-oiwaikin/03sp.png");
+        background-position: center 50%;
+    }
+    #content02 .flowList li.lisi02::before {
+        top: -51px;
+    }
+    #content02 .flowList li.lisi02::after {
+        right: auto;
+        bottom: -51px;
+    }
+}
+/* content02 END */
+
+/* content03 Start */
+#content03 {
+    padding: 50px 0;
+    background-color: #e9f5ff;
+}
+#content03 .title03 {
+    margin-bottom: 30px;
+    color: #0e6eb8;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+#content03 .faqList {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#content03 .faqList li {
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #0e6eb8;
+    border-radius: 10px;
+}
+#content03 .faqList .toggle {
+    display: none;
+}
+#content03 .faqList .question {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    color: #0e6eb8;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#content03 .faqList .question::before {
+    content: "Q:";
+    display: block;
+    margin: 0 0.5em 0 0;
+}
+#content03 .faqList .question::after{
+    content: "＋";
+    display: block;
+    margin: 0 0 0 auto;
+    transition-duration: 0.5s;
+}
+#content03 .faqList .toggle:checked~.question::after{
+    content: "－";
+    transform: rotate(180deg);
+}
+#content03 .faqList .answer {
+    max-height: 0;
+    margin-left: 2.0em;
+    padding-left: 2.0em;
+    line-height: 1.7;
+    text-indent: -1.7em;
+    overflow: hidden;
+    transition-duration: 0.5s
+}
+#content03 .faqList .answer::before {
+    content: "A: ";
+    color: #ff9c1a;
+    font-size: 20px;
+    font-weight: bold;
+}
+#content03 .faqList .toggle:checked~.answer {
+    max-height: 250px;
+}
+@media only screen and (max-width:480px) {
+    #content03 .faqList .answer {
+        margin-left: 0;
+    }
+}
+/* content03 END */
+
+/* content04 START */
+#content04 {
+    background-color: #0e6eb8;
+}
+#content04 .pageWidth {
+    padding: 50px 20px;
+    color: #ffffff;
+    text-align: center;
+    background-image: url("../images/about-oiwaikin/img08.png");
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+#content04 .title03 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+#content04 .title03 .catch01 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+#content04 .title03 .catch01::before,
+#content04 .title03 .catch01::after {
+    content: "|";
+    display: block;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+#content04 .title03 .catch01::before {
+    transform: rotate(-30deg);
+    margin-right: 10px;
+}
+#content04 .title03 .catch01::after {
+    transform: rotate(30deg);
+    margin-left: 10px;
+}
+#content04 .title03 .catch02 {
+    display: block;
+    font-size: 1.125em;
+}
+#content04 .title04 {
+    display: inline;
+    padding: 0.2em 1em 0.1em 1em;
+    font-size: 60px;
+    border: 2px solid #ffffff;
+}
+#content04 .conditionList {
+    max-width: 630px;
+    margin: 40px auto;
+    font-size: 20px;
+    text-align: left;
+}
+#content04 .memo {
+    max-width: 630px;
+    margin: 40px auto;
+    padding-left: 1em;
+    text-align: left;
+}
+#content04 .buttonBox {
+    margin: 0;
+}
+#content04 .buttonBox a {
+    display: block;
+    width: 100%;
+    max-width: 240px;
+    margin: 0 auto;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #0e6eb8;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid #ffffff;
+    border-radius: 50px;
+    transition-duration: 0.3s;
+}
+#content04 .buttonBox a:hover {
+    color: #0e6eb8;
+    background-color: #ffffff;
+    border: 1px solid #0e6eb8;
+    box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.3);
+}
+@media only screen and (max-width:720px) {
+#content04 .pageWidth {
+    padding-bottom: 220px;
+    background-position: center bottom;
+}
+    #content04 .title03 {
+        margin-bottom: 20px;
+        font-size: 5vw;
+        line-height: 1.4;
+    }
+    #content04 .title04 {
+        display: block;
+        padding: 0.2em 0 0.1em 0;
+        font-size: 8vw;
+    }
+    #content04 .conditionList {
+        margin: 30px auto;
+        font-size: 18px;
+    }
+    #content04 .memo {
+        margin: 30px auto;
+    }
+}
+@media only screen and (max-width:480px) {
+    #content04 .title03 {
+        font-size: 6vw;
+    }
+}
+/* content04 END */
+
+/* content05 START */
+#content05 {
+    padding: 50px 0;
+}
+#content05 .notesFrame {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d1d1d1;
+}
+#content05 .notesFrame .title05 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+#content05 .notesFrame .notesList {
+    padding-left: 1.5em;
+}
+
+/* fotter START */
+#siteFooter {
+    background-color: #0e6eb8;
+}
+#siteFooter .pageWidth {
+    padding: 20px 0;
+}
+#siteFooter .copy {
+    color: #ffffff;
+    font-size: 0.85em;
+    text-align: center;
+}
+/* footer END */
+
+@media only screen and (max-width:1100px) {
+}
+@media only screen and (max-width:720px) {
+}
+@media only screen and (max-width:480px) {
+}

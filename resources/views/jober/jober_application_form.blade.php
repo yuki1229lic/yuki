@@ -72,7 +72,7 @@
 
         .registerTable td .fBox_1 {
             display: flex;
-            gap: 1em;            
+            gap: 1em;
         }
 
         .width-80 {
@@ -476,9 +476,11 @@
             width: fit-content;
             display: none
         }
+
         .w-100 {
             width: 100%;
         }
+
         .pb-15 {
             padding-bottom: 15px;
         }
@@ -536,10 +538,10 @@
                                 <th>軽貨物運送業の経験<span class="must">必須</span></th>
                                 <td>
                                     <div class="fBox first_step1">
-                                        <label class="text-title"><input type="radio" name="ligt_cargo_experience"
-                                                value="1">有り</label>
-                                        <label class="text-title"><input type="radio" name="ligt_cargo_experience"
-                                                value="2" checked>無し</label>
+                                        <label class="text-title"><input type="checkbox" name="ligt_cargo_experience"
+                                                class="radio" value="1">有り</label>
+                                        <label class="text-title"><input type="checkbox" name="ligt_cargo_experience"
+                                                class="radio" value="2" checked>無し</label>
                                     </div>
                                 </td>
                             </tr>
@@ -547,10 +549,10 @@
                                 <th>持ち込み車両の有無<span class="must">必須</span></th>
                                 <td>
                                     <div class="fBox first_step2">
-                                        <label class="text-title"><input type="radio" name="vehicle"
+                                        <label class="text-title"><input type="checkbox" name="vehicle" class="radio"
                                                 value="1">有り</label>
-                                        <label class="text-title"><input type="radio" name="vehicle" value="2"
-                                                checked>無し</label>
+                                        <label class="text-title"><input type="checkbox" name="vehicle" class="radio"
+                                                value="2" checked>無し</label>
                                     </div>
                                 </td>
                             </tr>
@@ -558,9 +560,9 @@
                                 <th>氏名(フルネーム)<span class="must">必須</span></th>
                                 <td>
                                     <!-- <div class="fBox"> -->
-                                        <input type="text" name="full_name" id="full_name" class="form-control"
-                                            placeholder="山田 太郎" required />
-                                        <span class="required-message">必須です。</span>
+                                    <input type="text" name="full_name" id="full_name" class="form-control"
+                                        placeholder="山田 太郎" required />
+                                    <span class="required-message">必須です。</span>
                                     <!-- </div> -->
                                 </td>
                             </tr>
@@ -568,9 +570,9 @@
                                 <th>ふりがな<span class="must">必須</span></th>
                                 <td>
                                     <!-- <div class="fBox"> -->
-                                        <input type="text" name="sei_mei" id="sei_mei" class="form-control"
-                                            placeholder="やまだ たろう" required />
-                                        <span class="required-message">必須です。</span>
+                                    <input type="text" name="sei_mei" id="sei_mei" class="form-control"
+                                        placeholder="やまだ たろう" required />
+                                    <span class="required-message">必須です。</span>
                                     <!-- </div> -->
                                 </td>
                             </tr>
@@ -620,7 +622,8 @@
                                 <td>
                                     <div class="fBox_1">
                                         <div class="width-80">
-                                            <input type="text" name="zip" id="zip" class="form-control" placeholder="郵便番号" pattern="^[0-9]{7}$" required />
+                                            <input type="text" name="zip" id="zip" class="form-control"
+                                                placeholder="郵便番号" pattern="^[0-9]{7}$" required />
                                             <span class="required-message">必須です。</span>
                                         </div>
                                         <button type="button" id="zipSerchButton" class="button">郵便番号から入力</button>
@@ -672,8 +675,8 @@
                                 <td>
                                     <div class="fBox col pb-15">
                                         <div class="w-100">
-                                            <input type="password" name="password" class="form-control" placeholder="パスワード"
-                                                required>
+                                            <input type="password" name="password" class="form-control"
+                                                placeholder="パスワード" required>
                                             <span class="required-message">必須です。</span>
                                         </div>
                                         <div class="w-100">
@@ -692,7 +695,7 @@
                                 <p class="m-15">※可能日時を入力いただく欄ですので、確定日時ではありません。</p>
                                 <div id="extend-field">
                                     <div class="flex pb-10">
-                                        <input type="date" name="date[]" class="w-35" />                                        
+                                        <input type="date" name="date[]" class="w-35" />
                                     </div>
                                     <div class="time_checkbox">
                                         <div class="flex gap-5">
@@ -822,7 +825,7 @@
 
             $("#extend").click(function(e) {
                 e.preventDefault();
-                
+
                 $("#extend-field").append(
                     `<div class="flex pb-10">
                         <input type="date" name="date[]" class="w-35" />
@@ -910,7 +913,7 @@
                 parentDiv.next('.time_checkbox').remove();
                 parentDiv.remove();
                 checkDivCount();
-            });            
+            });
 
             $('.btn_primary').on('click', function() {
                 $('input[type="radio"]').change(checkRadios);
@@ -997,6 +1000,12 @@
                     $('#myform').submit();
                 }
                 e.preventDefault();
+            });
+
+            $('.radio').on('change', function() {
+                var name = $(this).attr('name');
+                $('input[name="' + name + '"]').prop('checked', false);
+                $(this).prop('checked', true);
             });
         });
     </script>

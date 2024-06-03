@@ -508,7 +508,6 @@ class HomeController extends Controller
             'full_name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|min:8|confirmed',
-            // 'password_confirmation' => 'required|string|min:8', 
             'sei_mei' => 'required|string|max:255',
             'phone' => 'required|string|max:255',
             'auto_login' => 'required',
@@ -528,6 +527,7 @@ class HomeController extends Controller
         $sei_mei = $request->sei_mei;
         // $last_name_kana = $request->sei;
         // $first_name_kana = $request->mei;
+
         $phone = $request->phone;
         $email_receive = $request->input('email_receive') === 'on' ? 1 : 0;
 
@@ -543,11 +543,9 @@ class HomeController extends Controller
         if ($user != null) {
             //creating profile,sending email, show message
             $profile = new User_profile();
-            $profile->user_id = $user->id;
-            // $profile->last_name = $last_name;
-            // $profile->first_name = $first_name;
-            // $profile->last_name_kana = $last_name_kana;
-            // $profile->first_name_kana = $first_name_kana;
+            $profile->user_id = $user->id;            
+            $profile->fullname = $name;
+            $profile->fullname_kana = $sei_mei;            
             $profile->birthday = $birthday;
             $profile->sex = $sex;
             $profile->zip = $zip;

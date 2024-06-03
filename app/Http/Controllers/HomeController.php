@@ -626,7 +626,7 @@ class HomeController extends Controller
                 $data['jober_email'] = $jober_email;
                 $data['user_name'] = $user_name;
                 $data['jober_name'] = $jober_name;
-                //    MailController::sendBidMail($data);
+                MailController::sendBidMail($data);
                 return view('user.user_bid_end');
             }
         }
